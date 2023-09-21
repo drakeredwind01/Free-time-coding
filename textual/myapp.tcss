@@ -1,0 +1,14 @@
+
+
+Widget {
+    background: brown;
+}
+
+#first-label {
+    background: blue;
+}
+
+Label, Input {
+    background: white;
+    color: black;
+}

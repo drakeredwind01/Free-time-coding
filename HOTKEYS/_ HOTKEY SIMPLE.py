@@ -15,7 +15,7 @@ def function_2():
 # Note the missing `()` after function_1 and function_2 as want to pass the function, not the return value of the function
 combination_to_function = {
     frozenset([Key.shift, Key.f1]): function_1,  # shift + a
-    frozenset([Key.shift_r]): function_2,  # shift + b
+    frozenset([Key.shift_r]): function_2,  # shift + b (not 'b' but should be)
     frozenset([Key.alt_l, KeyCode(vk=71)]): function_2,  # left alt + g
 }
 
