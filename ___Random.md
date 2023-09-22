@@ -25,3 +25,31 @@ below are my other socials
  facebook 	 | https://www.facebook.com/drake.redwind.73/                                  |
  twitter 	 | https://twitter.com/drakeredwind011                                         |
  instagram   | https://www.instagram.com/drakeredwind01.insta/                             |
+
+## work I'm looking for
+I'm ideally looking for a job that is in `remote full time cybersecurity`. 
+
+I'm willing to work my way up to the top and start at $40k/y
+
+but in this industry work can be found for $100k/y
+
+I'm also willing to work as a `remote IT`, `remote sys admin`
+
+
+
+
+
+
+a
+
+a
+
+a
+
+a
+
+a
+
+a
+
+d
