@@ -1,0 +1,23 @@
+digraph django_relations {
+	node [shape = circle];
+	graph [label="django scheme"];
+	"django" [label="django.py", width="0.22222", height="0.15278", pos="", tooltip="Django is the most robust python website maker dodad there is."];
+	"models.py" [label="models.py", group="django", width="0.47222", height="0.13889", pos=""];
+	"views.py" [label="views.py", group="django", width="0.30556", height="0.18056", pos=""];
+	"allauth.py" [label="allauth.py", group="django", width="0.52778", height="0.13889", pos="", tooltip="give a way for people to login"];
+	"serializer.py" [label="serializer.py", group="django", width="0.66667", height="0.13889", pos=""];
+	"admin.py" [label="admin.py", group="django", width="0.36111", height="0.15278", pos=""];
+	"templates" [label="templates", group="django", width="0.44444", height="0.13889", pos=""];
+	"html" [label=html, width="0.33333", height="0.15278", pos="", URL="https://godoc.org/regexp", tooltip="what the site will say"];
+	"css" [label=css, width="0.44444", height="0.13889", pos="", URL="https://godoc.org/regexp", tooltip="how the site will look"];
+	"js" [label=js, width="0.47222", height="0.13889", pos="", URL="https://godoc.org/regexp", tooltip="what the site will do"];
+	"models.py" -> "django";
+	"allauth.py" -> "django";
+	"serializer.py" -> "django" [label = "S(A)"];
+	"views.py" -> "django" [label = "S(b)"];
+	"admin.py" -> "django" [label = "S(a)"];
+    "templates" -> "django" [label = "how page is"];
+    "html" -> "templates" [label = "how it says"];
+    "css" -> "templates" [label = "how it looks"];
+    "js" -> "templates" [label = "how it acts"];
+}
