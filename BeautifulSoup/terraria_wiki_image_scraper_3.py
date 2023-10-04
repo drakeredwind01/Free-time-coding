@@ -1,13 +1,3 @@
-'''
-all file names are named as such:
-"
-latestcb=20160525130525
-latestcb=20160910155440
-latestcb=20170121230955
-latestcb=20191114010533
-"
-
-'''
 import os
 import sys
 import requests
@@ -28,10 +18,17 @@ def download_image(image_url, download_to_folder):
     print(f"Error downloading image '{image_url}': {e}")
     return
 
-  # Remove the question mark (`?`) character from the filename before calling the `open()` function.
-  filename = os.path.join(download_to_folder, os.path.basename(image_url).replace("?", ""))
+  # Remove the query string from the filename.
+  filename = os.path.basename(image_url).split("?")[0]
 
-  with open(filename, "wb") as output_file:
+  # Add a .png extension to the filename.
+  filename += ".png"
+
+  # Create the download path.
+  download_path = os.path.join(download_to_folder, filename)
+
+  # Download the image.
+  with open(download_path, "wb") as output_file:
     output_file.write(response.content)
 
 def scrape_item_images(download_to_folder):

@@ -1,8 +1,4 @@
-
-'''
-mindmap outputs html but not svg yet
-
-'''
+import webbrowser
 
 class Node:
     def __init__(self, name, coordinates):
@@ -20,13 +16,13 @@ class Node:
 class MindMap:
     def __init__(self):
         self.nodes = []
+        self.connections = []
 
     def add_node(self, node):
         self.nodes.append(node)
 
     def connect_nodes(self, node1, node2):
-        node1.add_neighbor(node2)
-        node2.add_neighbor(node1)
+        self.connections.append((node1, node2))
 
     def hide_names_at_zoom_level(self, zoom_level, name):
         for node in self.nodes:
@@ -44,7 +40,7 @@ class MindMap:
     def to_html(self):
         map_html = """
         <div id="mindmap">
-            <svg width="500" height="500">
+            <svg width="1000000" height="1000000">
                 <g>
     """
 
@@ -81,9 +77,16 @@ class MindMap:
 mindmap = MindMap()
 
 # Create nodes
-node1 = Node("Node 1", (1, 1))
-node2 = Node("Node 2", (2, 2))
-node3 = Node("Node 3", (3, 3))
+node1 = Node("Lee", (170.02,189.4))
+node2 = Node("Robertson", (216.67,276.4))
+node3 = Node("Bederson", (537.18,570.5))
+node4 = Node("Nachmanson", (410.55,1105.5))
+node5 = Node("Tóth", (325.2,394.21))
+node6 = Node("Kyncl", (662.2,354.41))
+node7 = Node("Pinchasi", (2101,372.82))
+node8 = Node("Cerný", (578.6,378.07))
+node9 = Node("Keszegh", (360.5,374.88))
+node10 = Node("Pálvölgyi", (177.7,354.65))
 
 # Add nodes to the mindmap
 mindmap.add_node(node1)
@@ -102,3 +105,13 @@ mindmap.display_cluster_relations((1.5, 1.5), ["Node 1", "Node 2"])
 
 # Save the mindmap
 mindmap.save("mindmap.html")
+
+# Get the SVG code for the mindmap
+svg_code = mindmap.to_html()
+
+# Insert the SVG code into the HTML file
+with open("mindmap.html", "w") as f:
+    f.write(svg_code)
+
+# Open the HTML file in a web browser
+webbrowser.open("mindmap.html")

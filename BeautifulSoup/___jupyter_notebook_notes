@@ -1,0 +1,2 @@
+jupyter notebook --notebook-dir=D:/
+jupyter notebook --notebook-dir="D:/documents/GitHub/Free time coding"
