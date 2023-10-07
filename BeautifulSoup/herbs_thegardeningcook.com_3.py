@@ -25,8 +25,8 @@ for img in tqdm(imgs[11::2]):
     filename = r'herbs'+imglink[imglink.rfind('/'):]
 
     # Create the directory if it does not exist.
-    if not os.path.exists('herbs'):
-        os.mkdir('herbs')
+    if not os.path.exists('../_MINDMAP/herbs'):
+        os.mkdir('../_MINDMAP/herbs')
 
     # Write the image to the file.
     with open(filename, "wb") as file:
