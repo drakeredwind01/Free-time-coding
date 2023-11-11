@@ -3,6 +3,7 @@ jupyter notebook --notebook-dir=D:/
 jupyter notebook --notebook-dir="D:/documents/GitHub/Free time coding"
 
 https://docs.conda.io/projects/miniconda/en/latest/index.html
+    conda create -n "myenv"
 conda install -c conda-forge jupyterlab
 conda install -c conda-forge pytesseract
     https://github.com/UB-Mannheim/tesseract/wiki
