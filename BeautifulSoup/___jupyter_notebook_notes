@@ -2,6 +2,16 @@ conda install -c anaconda beautifulsoup4
 jupyter notebook --notebook-dir=D:/
 jupyter notebook --notebook-dir="D:/documents/GitHub/Free time coding"
 
+https://docs.conda.io/projects/miniconda/en/latest/index.html
+conda install -c conda-forge jupyterlab
+conda install -c conda-forge pytesseract
+    https://github.com/UB-Mannheim/tesseract/wiki
+    download "tesseract-ocr-w64-setup-5.3.3.20231005.exe (64 bit)"
+    "C:\Program Files\Tesseract-OCR\tesseract.exe"
+    add the obove to %PATH%
+conda install -c conda-forge opencv
+jupyter-lab --notebook-dir="D:/documents/GitHub/Free time coding"
+
 
 
 

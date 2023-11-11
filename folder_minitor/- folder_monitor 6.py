@@ -33,7 +33,9 @@ folder_paths = [r'C:\Windows\SoftwareDistribution\Download',
                 r'C:\Users\drakeredwind01\AppData\Local\Microsoft\Windows\WebCache',
                 r'%temp%',
                 r'C:\Users\drakeredwind01\AppData\Local\Microsoft\Windows\INetCache',
-                r'C:\Users\drakeredwind01\AppData\Local\Opera Software\Opera GX Stable\Cache\Cache_Data']
+                r'C:\Users\drakeredwind01\AppData\Local\Opera Software\Opera GX Stable\Cache\Cache_Data'
+                r'C:\Users\drakeredwind01\AppData\Local\Temp',
+                ]
 
 scan_interval = 320 # seconds
 

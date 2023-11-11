@@ -1,0 +1,69 @@
+/* This is a co-authorship graph. Each node is an author and an edge exist between two authors if their name appears in a paper on one of the International Symposium on Graph Drawing bwteeen 1994-2007. The top 8 connected components is taken, and the graph is laidout using sfdp, and a map showing the clustering relationship is generated using gvmap with command:
+
+gvmap  -e gd_1994_2007.gv | neato -Ecolor="#55555522" -n2 -Tpng > gd_1994_2007.png
+
+This graph already has coordinates assigned and overlap removed. For a graph not yet laidout, use a layout engine with a suitable overlap removal algorithm, e.g.,
+
+sfdp -Goverlap=prism
+
+first before feeding the output to gvmap.
+
+*/
+
+graph {
+	rankdir=LR;
+    graph [overlap_scaling=3, pack=90, label="redwind01 data driven plant dosche Graph Drawing, 2021"];
+	node [label="\N", width="0.001", height="0.001", margin="0.001"];
+	graph [bb="0,0,1537.4,1200.5"];
+	ginger [group=herbs,group=herbs,fontsize=7,];
+	lavender [label=lavender, group=herbs, width="0.47222", height="0.13889", group=11, fontsize=6, ];
+	rosemary [label=resemary, group=herbs, width="0.47222", height="0.13889", group=11, fontsize=6, ];
+	peppermint [label=pepermint, group=herbs, width="0.47222", height="0.13889", group=11, fontsize=6, ];
+	feverfew [group=herbs,group=herbs,fontsize=7,];
+
+	pain_releaf [label=pain_releaf, group=cures, width="0.66667", height="0.13889", fontsize=6, ];
+	
+
+	ginger -- pain_releaf [weight="1.0", pos="577.73,1087.2 584.66,1085.3 595.01,1082.4 603.29,1080.1"];
+	peppermint -- pain_releaf
+	tumeric -- pain_releaf [weight="1.0", pos="563.69,1085.8 558.47,1082.7 551.04,1078.5 545.37,1075.2"];
+	lavender -- pain_releaf [weight="1.0", pos="577.08,1092.2 583.16,1094.6 592.05,1098.1 599.13,1101"];
+	feverfew -- pain_releaf [weight="2.0", pos="1035.5,391.22 1060.8,383.88 1125.6,365.04 1151.4,357.55"];
+	rosemary -- pain_releaf [weight="1.0", pos="1035.5,391.32 1049.4,387.4 1074.2,380.4 1088.9,376.22"];
+    
+	Garlic--inflamation
+	Ginger--inflamation
+	Turmeric--inflamation
+	Cardamom--inflamation
+	Black_pepper--inflamation
+	Ginseng--inflamation
+	Green_tea--inflamation
+	Rosemary--inflamation
+	yarrow_milfoil[tooltip=extended_use_of_the_yarrow_leaves_may_make_skin_sensitive_to_light,]
+    yarrow_milfoil--tea_composite_toothache
+    yarrow_milfoil--tea_digestion
+    yarrow_milfoil--tea_regulate_menstral_flow
+    yarrow_milfoil--tea_induce_perperation
+    yarrow_milfoil--tea_cleanse_system
+    yarrow_milfoil--tea_cure_cold
+    yarrow_milfoil--decoction_wonds
+    yarrow_milfoil--decoction_chapped_skin
+    yarrow_milfoil--decoction_rashes
+    yarrow_milfoil--mouthwash_inflamed_gums
+    ladys_mantle--boil_green_dye
+    ladys_mantle--infuse_astringent
+    ladys_mantle--infuse_facial_steam
+    ladys_mantle--infuse_facial_steam_acne
+    ladys_mantle--decoction_chapped_skin
+    ladys_mantle--whole_plant_decoction_chapped_skin
+}
+
+
+// 	Ginger[label='Ginger(Zingiber_officinale)']-- is a delicious spice with a peppery yet sweet flavor. ...
+//     Garlic. Garlic (Allium sativum) is a popular spice with a strong smell and taste. ...
+//     Turmeric. ...
+//     Cardamom. ...
+//     Black pepper. ...
+//     Ginseng. ...
+//     Green tea. ...
+//     Rosemary.

@@ -1,0 +1,21 @@
+digraph mygraph {
+  fontname="Helvetica,Arial,sans-serif"
+  node [fontname="Helvetica,Arial,sans-serif"]
+  edge [fontname="Helvetica,Arial,sans-serif"]
+  node [shape=box];
+  rankdir = "BT"
+  label="drakeredwind01's graph of django"
+  "config/settings/base.py" -> library
+  "library/models.py"->"library/models.py"
+  "library/models.py"->"library/models.py"
+  "library/models.py"->"library/models.py"
+  "library/models.py"->"library/models.py"
+  "library/models.py"->"library/models.py"
+  "library/serializer.py"->"library/models.py"
+  "library/views.py"->"library/models.py"
+  "library/views.py"->"library/serializer.py"
+  "config/api_router.py"->"library/views.py"
+  "config/urls.py"->"library/views.py"
+  "library.admin.py"->"library/models.py"
+  "{folder name}{project name}\templates\books.html"->"library/views.py"
+}

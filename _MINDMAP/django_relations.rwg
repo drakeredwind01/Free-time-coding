@@ -9,17 +9,17 @@ graph django_relations {
 	node [label="\N", width="0.001", height="0.001", margin="0.001"];
 	graph [bb="0,0,1537.4,1200.5"];
 
-	'django' [label=django, width="0.22222", height="0.15278", group=python, zoomin=3, zommax=100, pos="", tooltip="Django is the most robust python website maker dodad there is."];
-	'allauth.py' [label='allauth', width="0.52778", height="0.13889", group='django', zoomin=1, zommax=5, pos="", give a way for people to login];
-	'models.py' [label='models.py', width="0.47222", height="0.13889", group='django', zoomin=1, zommax=5, pos=""];
-	'serializer.py' [label='serializer.py', width="0.66667", height="0.13889", group='django', zoomin=1, zommax=5, pos=""];
-	'views.py' [label='views.py', width="0.30556", height="0.18056", group='django', zoomin=1, zommax=5, pos=""];
-	'admin.py' [label='admin.py', width="0.36111", height="0.15278", group='django', zoomin=1, zommax=5, pos=""];
-	'templates' [label=Pinchasi, width="0.44444", height="0.13889", group='django', zoomin=1, zommax=5, pos=""];
-	'html' [label=Cerný, width="0.33333", height="0.15278", group='templates', zoomin=1, zommax=3, pos="", URL="https://godoc.org/regexp", tooltip="what the site will say"];
-	'css' [label=Keszegh, width="0.44444", height="0.13889", group='templates', zoomin=1, zommax=3, pos="", URL="https://godoc.org/regexp", tooltip="how the site will look"];
-	'js' [label=Pálvölgyi, width="0.47222", height="0.13889", group='templates', zoomin=1, zommax=3, pos="", URL="https://godoc.org/regexp", tooltip="what the site will do"];
-	'django' <- 'allauth.py' [label = "S($end)"];
+	django [label=django, width="0.22222", height="0.15278", group=python, zoomin=3, zommax=100, pos="", tooltip="Django is the most robust python website maker dodad there is."];
+	allauth_py [label=allauth, width="0.52778", height="0.13889", group=django, zoomin=1, zommax=5, pos="", give a way for people to login];
+	models_py [label='models.py', width="0.47222", height="0.13889", group='django', zoomin=1, zommax=5, pos=""];
+	serializer_py [label='serializer.py', width="0.66667", height="0.13889", group='django', zoomin=1, zommax=5, pos=""];
+	views_py [label='views.py', width="0.30556", height="0.18056", group='django', zoomin=1, zommax=5, pos=""];
+	admin_py [label='admin.py', width="0.36111", height="0.15278", group='django', zoomin=1, zommax=5, pos=""];
+	templates [label=Pinchasi, width="0.44444", height="0.13889", group='django', zoomin=1, zommax=5, pos=""];
+	html [label=Cerný, width="0.33333", height="0.15278", group='templates', zoomin=1, zommax=3, pos="", URL="https://godoc.org/regexp", tooltip="what the site will say"];
+	css [label=Keszegh, width="0.44444", height="0.13889", group='templates', zoomin=1, zommax=3, pos="", URL="https://godoc.org/regexp", tooltip="how the site will look"];
+	js [label=Pálvölgyi, width="0.47222", height="0.13889", group='templates', zoomin=1, zommax=3, pos="", URL="https://godoc.org/regexp", tooltip="what the site will do"];
+	django <- 'allauth.py' [label = "S($end)"];
 	'django' <- 6 [label = "SS(b)"];
 	'django' <- 5 [label = "SS(a)"];
 	'django' <- 4 [label = "S(A)"];

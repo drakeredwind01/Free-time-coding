@@ -2,7 +2,11 @@ from selenium import webdriver
 import pyautogui
 import time
 
+from selenium.webdriver.chrome import service
 
+
+
+folder_path = r'C:\Windows\SoftwareDistribution\Download'
 driver = webdriver.Chrome('C:\\Users\\drivers\\chromedriver.exe')
 
 driver.get('https://chrome.google.com/webstore/detail/buster-captcha-solver-for/mpbjkejclgfgadiemmefgebjfooflfhl?hl=en')
