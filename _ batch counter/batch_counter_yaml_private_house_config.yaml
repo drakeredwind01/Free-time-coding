@@ -1,0 +1,11 @@
+units:
+  workers: 4
+  Metal: 4
+  Wood: 50
+  Concrete: 170
+
+costs:
+  workers: 2650
+  Metal: 1171
+  Wood: 324
+  Concrete: 47

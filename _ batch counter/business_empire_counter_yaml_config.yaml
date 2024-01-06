@@ -1,0 +1,25 @@
+costs:
+  workers: 2650
+  Metal: 1171
+  Wood: 324
+  Concrete: 47
+private_house:
+  workers: 4
+  Metal: 4
+  Wood: 50
+  Concrete: 170
+office_building:
+  workers: 13
+  Metal: 12
+  Wood: 400
+  Concrete: 1500
+trade_center:
+  workers: 90
+  Metal: 25
+  Wood: 300
+  Concrete: 3800
+skyscraper:
+  workers: 600
+  Metal: 1450
+  Wood: 2800
+  Concrete: 190000

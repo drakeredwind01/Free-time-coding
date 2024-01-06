@@ -8,7 +8,8 @@ import pyttsx3
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[len(voices)-1].id)
-engine.setProperty('rate', 400)
+engine.setProperty('rate', 300)
+# my limit 2023.11.19.19.18.27.053 400  hard 500
 
 
 def speak(audio):
@@ -39,6 +40,7 @@ if __name__ == '__main__':
     print(arg_line)
     argCharicters = len(arg_line)
     print(argCharicters)
+    print(f"Number of charicters: {argCharicters}") #testing
 
 
     def check_space(argv):
@@ -50,9 +52,36 @@ if __name__ == '__main__':
     speak(arg_line)
     curtime = (time.time() - starttime)
     print(curtime)
+    print(f"AI TIME: {curtime}")  # testing
+    # AIWPM = (number of words) / (time in minutes)
+    # AIWPM = (435 words) / (64.37510085105896 seconds/ 60 seconds/minute)
+    # AIWPM = 418.829 WPM
+    print(f"AI W/M: {int(argCharicters / curtime)}")  # wrong
+    print(f"AI W/M: {int(argCharicters / (curtime / 60))}")  # testing
+    print(f"AI W/M: {int((check_space(arg_line)+1) / (curtime / 60))}")  # testing
+    # AI words per minute is calculated by dividing the number of characters by the time in minutes (since 1 minute is equal to 60 seconds)
+    print(f"Human W/M: 150")  # testing
+    # TODO add human would take to read time
+    # Human words per minute is assumed to be 150 words per minute
+    print(f"AI {int((check_space(arg_line)+1) / (curtime / 60) / (150))*(100)}% faster: ")  # testing
+
+    # total time saved = (human reading time - AI reading time)
+    total_time_saved = int(curtime - ((check_space(arg_line) + 1) / 150)) # wrong
+
+
+    print(
+        f"Total Time Saved: {total_time_saved} seconds"
+    )  # testing
 
     # for google sheets
-    print("{argCharicters},{wordcount},{curtime}".format(argCharicters=argCharicters, wordcount=numWords, curtime=curtime))
+    print(
+        "{argCharicters},{wordcount},{curtime},{total_time_saved}".format(
+            argCharicters=argCharicters,
+            wordcount=numWords,
+            curtime=curtime,
+            total_time_saved=total_time_saved,
+        )
+    )
 
 
 '''

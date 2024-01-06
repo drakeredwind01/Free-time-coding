@@ -10,7 +10,149 @@ print(volume) #27000
 
 
 
+"Mon, Dec 4
+Work, 6:59 AM,11:59 AM
+Meal, 11:59 AM, 12:29 PM
+Work, 12:29 PM, 4:15 PM
 
+
+
+
+
+
+
+"Tue, Dec 5
+
+Work
+
+Meal
+
+Work
+7:01 AM
+–
+12:00 PM
+
+
+12:00 PM
+–
+12:30 PM
+
+
+12:30 PM
+–
+4:15 PM"
+
+
+
+
+
+Wed, Dec 6
+
+Work, 6:58 AM, 11:58 AM
+Meal, 11:58 AM, 12:28 PM
+Work, 12:28 PM, 3:45 PM
+Work, 8:25 PM, 10:00 PM
+
+
+
+
+
+
+
+
+
+"Thu, Dec 7
+
+Work, 6:57 AM, 11:57 AM
+Meal, 11:57 AM, 12:27 PM
+Work, 12:27 PM, 3:27 PM
+Work, 5:28 PM, 7:25 PM"
+
+
+
+
+
+
+
+
+
+"Fri, Dec 8
+
+Work, 6:55 AM, 11:55 AM
+Meal, 11:55 AM, 12:25 PM
+Work, 12:25 PM, 3:26 PM
+
+
+
+
+
+
+
+
+Sat, Dec 9
+
+Work, 5:47 PM, 8:07 PM
+
+
+
+
+Mon, Dec 11
+
+Work
+
+Meal
+
+Work
+
+Work
+7:06 AM
+–
+12:00 PM
+
+
+12:00 PM
+–
+12:28 PM
+
+
+12:28 PM
+–
+3:28 PM
+
+
+8:06 PM
+–
+10:06 PM
+
+
+
+Tue, Dec 12
+
+Work
+
+Meal
+
+Work
+
+Work
+7:02 AM
+–
+11:57 AM
+
+
+11:57 AM
+–
+12:27 PM
+
+
+12:27 PM
+–
+3:27 PM
+
+
+6:23 PM
+–
+8:23 PM"
 
 
 

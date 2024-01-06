@@ -47,7 +47,7 @@ pyautogui.click(x=moveToX, y=moveToY, clicks=num_of_clicks, interval=secs_betwee
 #if found, used in bloons-moneyky-city
 D:\\documents\\ai\\python\\my-first-conda-project\\Bloons-Monkey-City\\
 
-if (pyautogui.locateOnScreen('test.PNG') is not None):
+if (pyautogui.locateOnScreen('zzzselenium.py.PNG') is not None):
     pyautogui.hotkey('win', 'l')
 
     claimnow = pyautogui.locateCenterOnScreen('C:\\Users\\drakeredwind01\\Desktop\\BTC sources\\bitfun claim now.png', confidence=0.8)

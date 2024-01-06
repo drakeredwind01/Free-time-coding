@@ -7,7 +7,7 @@ from selenium.webdriver.chrome import service
 
 
 folder_path = r'C:\Windows\SoftwareDistribution\Download'
-driver = webdriver.Chrome('C:\\Users\\drivers\\chromedriver.exe')
+driver = webdriver.Chrome('C:\\Users\\drivers\\chromedriver_114_0_5735_90.exe')
 
 driver.get('https://chrome.google.com/webstore/detail/buster-captcha-solver-for/mpbjkejclgfgadiemmefgebjfooflfhl?hl=en')
 time.sleep(2)
