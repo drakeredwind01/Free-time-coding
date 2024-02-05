@@ -1,6 +1,7 @@
 conda install -c anaconda beautifulsoup4
 jupyter notebook --notebook-dir=D:/
-jupyter notebook --notebook-dir="D:/documents/GitHub/Free time coding"
+D:
+jupyter notebook --notebook-dir="D:/documents/GitHub/Free-time-coding"
 
 https://docs.conda.io/projects/miniconda/en/latest/index.html
     conda create -n "myenv"
@@ -13,7 +14,7 @@ conda install -c conda-forge pytesseract
 conda install -c conda-forge opencv
 jupyter-lab --notebook-dir="D:/documents/GitHub/Free time coding"
 
-
+conda env export > environment.yml
 
 
 
