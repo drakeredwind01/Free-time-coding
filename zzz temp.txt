@@ -1,0 +1,77 @@
+This is a $20 project that will lead to your premium $100 project.
+you are only up against 2 other people.
+
+
+
+This is for the site redwind01.com/survival. I plan on hiring someone for future projects.
+This is just a test to help me decide who to go with.
+
+
+
+You decide colors, themes, styles,
+NEEDS TO BE SIMPLE and easy to maintain
+
+
+
+pictures
+"challenges 2.png" is another project I'm working on. the site will start very simple and evolve into how it looks in the image much like "survival home 2.png" this will also be the site you work on if you win.
+"graph of plants normal for svg.png" is an example of what the graph for the plants should look like but the dimensions are off in the home image.
+
+
+
+needs to have:
+site URL must be redwind01.com/survival/home
+site structure should have the elements of "survival home 2.png"
+top nav
+side nav (with autocomplete search can work with -/+ tag (e.g. +HIV -nightshade))
+graph.svg (to zoom in on a svg file within a window)
+form to input plants (below) and shown in cards
+Hosting setup (docker)
+Post upload maintenance (at least 2 week window for changes)
+
+
+
+example of test data that the form needs to process (from here down)
+Must include nightshade
+
+ginger -- pain_relief
+peppermint -- pain_relief
+tumeric -- pain_relief
+lavender -- pain_relief
+feverfew -- pain_relief
+rosemary -- pain_relief
+Garlic--inflammation
+Ginger--inflammation
+Turmeric--inflammation
+Cardamom--inflammation
+Black_pepper--inflammation
+Ginseng--inflammation
+Green_tea--inflammation
+Rosemary--inflammation
+yarrow_milfoil [tooltip=extended_use_of_the_yarrow_leaves_may_make_skin_sensitive_to_light,]
+yarrow_milfoil--tea_composite_toothache
+yarrow_milfoil--tea_digestion
+yarrow_milfoil--tea_regulate_menstral_flow
+yarrow_milfoil--tea_induce_perperation
+yarrow_milfoil--tea_cleanse_system
+yarrow_milfoil--tea_cure_cold
+yarrow_milfoil--decoction_wonds
+yarrow_milfoil--decoction_chapped_skin
+yarrow_milfoil--decoction_rashes
+yarrow_milfoil--mouthwash_inflamed_gums
+ladys_mantle--boil_green_dye
+ladys_mantle--infuse_astringent
+ladys_mantle--infuse_facial_steam
+ladys_mantle--infuse_facial_steam_acne
+ladys_mantle--decoction_chapped_skin
+Ladys_mantle--whole_plant_decoction_chapped_skin
+Ginger is a delicious spice with a peppery yet sweet flavor. ...
+Garlic. Garlic (Allium Sativum) is a popular spice with a strong smell and taste. ...
+Turmeric. ...
+Cardamom. ...
+Black pepper. ...
+Ginseng. ...
+Green tea. ...
+Rosemary.
+nightshade (Binomial Nomenclature)
+

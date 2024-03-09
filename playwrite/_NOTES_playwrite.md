@@ -9,3 +9,19 @@ except KeyboardInterrupt:
     browser.close()
 '''
     page.click('button[type=submit]')  # type="submit"
+
+
+
+# Exposes API that can be used for the Web API testing.
+playwright.request
+
+
+
+
+
+
+
+
+
+
+
