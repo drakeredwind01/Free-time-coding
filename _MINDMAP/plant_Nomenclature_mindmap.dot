@@ -1,0 +1,29 @@
+/* This is a co-authorship graph. Each node is an author and an edge exist between two authors if their name appears in a paper on one of the International Symposium on Graph Drawing bwteeen 1994-2007. The top 8 connected components is taken, and the graph is laidout using sfdp, and a map showing the clustering relationship is generated using gvmap with command:
+
+gvmap  -e gd_1994_2007.gv | neato -Ecolor="#55555522" -n2 -Tpng > gd_1994_2007.png
+
+This graph already has coordinates assigned and overlap removed. For a graph not yet laidout, use a layout engine with a suitable overlap removal algorithm, e.g.,
+
+sfdp -Goverlap=prism
+
+first before feeding the output to gvmap.
+
+*/
+
+digraph {
+	rankdir=LR;
+    graph [overlap_scaling=3, pack=90, label="redwind01 data driven plant dosche Graph Drawing, 2021"];
+	node [label="\N", width="0.001", height="0.001", margin="0.001"];
+	graph [bb="0,0,1537.4,1200.5"];
+    ladys_mantle->whole_plant_decoction_chapped_skin
+}
+
+
+// 	Ginger[label='Ginger(Zingiber_officinale)']-- is a delicious spice with a peppery yet sweet flavor. ...
+//     Garlic. Garlic (Allium sativum) is a popular spice with a strong smell and taste. ...
+//     Turmeric. ...
+//     Cardamom. ...
+//     Black pepper. ...
+//     Ginseng. ...
+//     Green tea. ...
+//     Rosemary.

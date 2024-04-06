@@ -56,7 +56,7 @@ if __name__ == '__main__':
     # AIWPM = (number of words) / (time in minutes)
     # AIWPM = (435 words) / (64.37510085105896 seconds/ 60 seconds/minute)
     # AIWPM = 418.829 WPM
-    print(f"AI W/M: {int(argCharicters / curtime)}")  # wrong
+    # print(f"AI W/M: {int(argCharicters / curtime)}")  # wrong
     print(f"AI W/M: {int(argCharicters / (curtime / 60))}")  # testing
     # AI words per minute is calculated by dividing the number of characters by the time in minutes (since 1 minute is equal to 60 seconds)
     print(f"Human W/M: 150")  # testing

@@ -1,50 +1,47 @@
-the moderators have reviewed your behavior.
-They were shocked at your appauling atitude and refusal to listen to reason
-they don't like, want, nor know how to handle the more extreme cases when it comes to unruly behavior/conduct
-I have had to deal with many in my many years of being a moderator within different orginizations.
-I didn't act as a true moderator should act last time because I didn't yet know my place nor the mission of the meetup
-I have since then caught up on both and have been given leave to handle situations as I see fit
-and I also hope that in the future that if you have any discrepinsies you will ask for a side bar or wait until after the meeting for discuttion.
+def process_transaction_line(line):
+  """
+  Processes a single line from the transaction history file, extracting relevant data.
 
-discord talk
-please post what you would like to learn about discord in my next tallk!
-person actions (right-click)
-not talking: push to talk, turning up the voice senitivity, muteing self for voice actifity
+  Args:
+      line (str): A line from the transaction history file.
 
+  Returns:
+      dict: A dictionary containing parsed information from the line.
+  """
+  # Split the line based on commas, handling potential extra commas
+  data = line.strip().split(",")
+  information = {}
 
-[   ] Biscuit (also known as Biscut)
-[X] Korn
-[X] System of a Down
-[X] Hamchtien
-[X] Slipknot
-[X] Disturbed
-[   ] Papa Roach
-[X] Marilyn Manson
-more obscure
-[   ] Seven Dust
-[   ] Deftones
-[   ] Soulfly
-[X] Godsmack
-mainstream
-[X] Post Malone
+  # Extract data based on expected positions in the file format
+  if len(data) >= 8:
+    information["description"] = data[1].strip()  # Description (e.g., PAYPAL *LUMI...)
+    information["date"] = data[3].strip()  # Date (e.g., 02/06/24)
+    information["days_ago"] = data[4].strip()  # Days ago (e.g., yesterday)
+    information["category"] = data[6].strip() if len(data) >= 7 else None  # Category (e.g., DiningOut)
+    information["amount"] = data[7].strip()  # Amount (e.g., -$39.99)
+    information["balance"] = data[8].strip()  # Balance (e.g., $785.10)
+  else:
+    print(f"Warning: Skipping line due to unexpected format: {line}")
 
-[  ] biscut
-[  ] korn
-[  ] system (of a down)
-[  ] hamchtien
-[  ] slip knot
-[  ] disturbed
-[  ] papa roach
-[  ] marylan manson
-more obscure
-[  ] seven dust
-[  ] deff tones
-[  ] soul fly
-[  ] god smack
-mainstream
-[  ] post malon
+  return information
 
+if __name__ == '__main__':
+  with open('Transaction_History.txt', 'r') as file:
+    transactions = []
+    for line in file:
+      # Skip the header line
+      if line.startswith('"'):
+        continue
+      transaction_data = process_transaction_line(line)
+      if transaction_data:
+        transactions.append(transaction_data)
 
-
-
-!
+  print("Transaction History:")
+  for transaction in transactions:
+    print(f"Description: {transaction['description']}")
+    print(f"Date: {transaction['date']}")
+    print(f"Days Ago: {transaction['days_ago']}")
+    print(f"Category: {transaction['category']}")
+    print(f"Amount: {transaction['amount']}")
+    print(f"Balance: {transaction['balance']}")
+    print("-" * 20)  # Separator between transactions
