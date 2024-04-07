@@ -110,3 +110,35 @@ https://www.medicalnewstoday.com/articles/271285#benefits
 
 
 
+<br> ginger -- pain_releaf
+<br> peppermint -- pain_releaf
+<br> tumeric -- pain_releaf
+<br> lavender -- pain_releaf
+<br> feverfew -- pain_releaf
+<br> rosemary -- pain_releaf
+<br> 
+<br> Garlic--inflamation
+<br> Ginger--inflamation
+<br> Turmeric--inflamation
+<br> Cardamom--inflamation
+<br> Black_pepper--inflamation
+<br> Ginseng--inflamation
+<br> Green_tea--inflamation
+<br> Rosemary--inflamation
+<br> yarrow_milfoil[tooltip=extended_use_of_the_yarrow_leaves_may_make_skin_sensitive_to_light,]
+<br> yarrow_milfoil--tea_composite_toothache
+<br> yarrow_milfoil--tea_digestion
+<br> yarrow_milfoil--tea_regulate_menstral_flow
+<br> yarrow_milfoil--tea_induce_perperation
+<br> yarrow_milfoil--tea_cleanse_system
+<br> yarrow_milfoil--tea_cure_cold
+<br> yarrow_milfoil--decoction_wonds
+<br> yarrow_milfoil--decoction_chapped_skin
+<br> yarrow_milfoil--decoction_rashes
+<br> yarrow_milfoil--mouthwash_inflamed_gums
+<br> ladys_mantle--boil_green_dye
+<br> ladys_mantle--infuse_astringent
+<br> ladys_mantle--infuse_facial_steam
+<br> ladys_mantle--infuse_facial_steam_acne
+<br> ladys_mantle--decoction_chapped_skin
+<br> ladys_mantle--whole_plant_decoction_chapped_skin
