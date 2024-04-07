@@ -97,12 +97,12 @@ Scientific classification
 
 
 https://www.medicalnewstoday.com/articles/271285#benefits
-Medical Uses
-Heart disease
-Stroke
-Cancer
-High blood pressure
-Constipation
+<br> Medical Uses
+<br> Heart disease
+<br> Stroke
+<br> Cancer
+<br> High blood pressure
+<br> Constipation
 
 
 
