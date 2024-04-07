@@ -3,7 +3,7 @@ https://github.com/drakeredwind01/Free-time-coding/blob/main/_MINDMAP/plants/rea
 
 
 > https://plants.usda.gov/home/classification/55527
-> <img src='plants_media\Potato_plant_with_tubers.png' width='50%'><br>
+> <br><img src='plants_media\Potato_plant_with_tubers.png' width='50%'><br>
 > potato
 
 | classification  | type                                |
@@ -43,7 +43,7 @@ https://github.com/drakeredwind01/Free-time-coding/blob/main/_MINDMAP/plants/rea
 
 
 > https://plants.usda.gov/home/classification/55527
-> <img src='plants_media\Rose.png' width='50%'><br>
+> <br><img src='plants_media\Rose.png' width='50%'><br>
 > rose
 
 | classification  | type                              |
@@ -73,7 +73,7 @@ https://github.com/drakeredwind01/Free-time-coding/blob/main/_MINDMAP/plants/rea
 <br><br><br><br><br>
 
 > https://plants.usda.gov/home/classification/55527
-> <img src='plants_media\strawberry.png' width='50%'><br>
+> <br><img src='plants_media\strawberry.png' width='50%'><br>
 > strawberry
 
 strawberry 
