@@ -3,6 +3,11 @@
 
 plant_mindmap.png
 ![plant_mindmap.png](plant_mindmap.png)
+
+
+
+
+
 <img src='_MINDMAP/plant_mindmap.png' width='25%'>
 
 
