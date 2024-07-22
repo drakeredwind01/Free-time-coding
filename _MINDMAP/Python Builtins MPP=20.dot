@@ -1,0 +1,173 @@
+
+
+
+
+digraph regexp {
+ fontname="Helvetica,Arial,sans-serif"
+ node [fontname="Helvetica,Arial,sans-serif"]
+ edge [fontname="Helvetica,Arial,sans-serif"]
+4592 -> all -> BUILTIN;
+4835 -> any -> BUILTIN;
+22 -> ascii -> BUILTIN;
+214 -> bin -> BUILTIN;
+6903 -> bool -> BUILTIN;
+2 -> breakpoint -> BUILTIN;
+5549 -> bytearray -> BUILTIN;
+3995 -> bytes -> BUILTIN;
+2710 -> callable -> BUILTIN;
+3275 -> chr -> BUILTIN;
+263 -> classmethod -> BUILTIN;
+785 -> compile -> BUILTIN;
+622 -> complex -> BUILTIN;
+618 -> delattr -> BUILTIN;
+32770 -> dict -> BUILTIN;
+1986 -> dir -> BUILTIN;
+1201 -> divmod -> BUILTIN;
+19791 -> enumerate -> BUILTIN;
+2361 -> eval -> BUILTIN;
+2137 -> exec -> BUILTIN;
+2924 -> filter -> BUILTIN;
+23165 -> float -> BUILTIN;
+124423 -> format -> BUILTIN;
+2080 -> frozenset -> BUILTIN;
+28920 -> getattr -> BUILTIN;
+2652 -> globals -> BUILTIN;
+26279 -> hasattr -> BUILTIN;
+3195 -> hash -> BUILTIN;
+121 -> help -> BUILTIN;
+1993 -> hex -> BUILTIN;
+3581 -> id -> BUILTIN;
+2691 -> input -> BUILTIN;
+67493 -> int -> BUILTIN;
+104212 -> isinstance -> BUILTIN;
+3130 -> issubclass -> BUILTIN;
+4792 -> iter -> BUILTIN;
+222626 -> len -> BUILTIN;
+47710 -> list -> BUILTIN;
+2800 -> locals -> BUILTIN;
+10239 -> map -> BUILTIN;
+12685 -> max -> BUILTIN;
+282 -> memoryview -> BUILTIN;
+9718 -> min -> BUILTIN;
+6906 -> next -> BUILTIN;
+1927 -> object -> BUILTIN;
+112 -> oct -> BUILTIN;
+48092 -> open -> BUILTIN;
+7054 -> ord -> BUILTIN;
+1003 -> pow -> BUILTIN;
+170384 -> print -> BUILTIN;
+5589 -> property -> BUILTIN;
+65060 -> range -> BUILTIN;
+12059 -> repr -> BUILTIN;
+3020 -> reversed -> BUILTIN;
+4647 -> round -> BUILTIN;
+34706 -> set -> BUILTIN;
+8048 -> setattr -> BUILTIN;
+1921 -> slice -> BUILTIN;
+15946 -> sorted -> BUILTIN;
+887 -> staticmethod -> BUILTIN;
+98316 -> str -> BUILTIN;
+7082 -> sum -> BUILTIN;
+46163 -> super -> BUILTIN;
+11984 -> tuple -> BUILTIN;
+25288 -> type -> BUILTIN;
+1500 -> vars -> BUILTIN;
+11994 -> zip -> BUILTIN;
+}
+
+
+
+/*
+<!doctype html>
+<meta charset="utf-8">
+
+<script src="//d3plus.org/js/d3.js"></script>
+
+<div id="viz"></div>
+
+<script>
+  var sample_data = [
+abs -> BUILTIN;
+all -> BUILTIN;
+any -> BUILTIN;
+ascii -> BUILTIN;
+bin -> BUILTIN;
+bool -> BUILTIN;
+breakpoint -> BUILTIN;
+bytearray -> BUILTIN;
+bytes -> BUILTIN;
+callable -> BUILTIN;
+chr -> BUILTIN;
+classmethod -> BUILTIN;
+compile -> BUILTIN;
+complex -> BUILTIN;
+delattr -> BUILTIN;
+dict -> BUILTIN;
+dir -> BUILTIN;
+divmod -> BUILTIN;
+enumerate -> BUILTIN;
+eval -> BUILTIN;
+exec -> BUILTIN;
+filter -> BUILTIN;
+float -> BUILTIN;
+format -> BUILTIN;
+frozenset -> BUILTIN;
+getattr -> BUILTIN;
+globals -> BUILTIN;
+hasattr -> BUILTIN;
+hash -> BUILTIN;
+help -> BUILTIN;
+hex -> BUILTIN;
+id -> BUILTIN;
+input -> BUILTIN;
+int -> BUILTIN;
+isinstance -> BUILTIN;
+issubclass -> BUILTIN;
+iter -> BUILTIN;
+len -> BUILTIN;
+list -> BUILTIN;
+locals -> BUILTIN;
+map -> BUILTIN;
+max -> BUILTIN;
+memoryview -> BUILTIN;
+min -> BUILTIN;
+next -> BUILTIN;
+object -> BUILTIN;
+oct -> BUILTIN;
+open -> BUILTIN;
+ord -> BUILTIN;
+pow -> BUILTIN;
+print -> BUILTIN;
+property -> BUILTIN;
+range -> BUILTIN;
+repr -> BUILTIN;
+reversed -> BUILTIN;
+round -> BUILTIN;
+set -> BUILTIN;
+setattr -> BUILTIN;
+slice -> BUILTIN;
+sorted -> BUILTIN;
+staticmethod -> BUILTIN;
+str -> BUILTIN;
+sum -> BUILTIN;
+super -> BUILTIN;
+tuple -> BUILTIN;
+type -> BUILTIN;
+vars -> BUILTIN;
+zip -> BUILTIN;
+  ];
+
+  var visualization = d3plus.viz()
+    .container("#viz")
+    .data(sample_data)
+    .type("tree_map")
+    .id(["name"])
+    .depth(0)
+    .size("value")
+    .draw()
+</script>
+
+<h1>hi</h1>
+
+
+*/

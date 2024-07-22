@@ -1,0 +1,6 @@
+pip install deepface
+pip install matplotlib
+pip install tf-keras
+pip install nb-black
+
+

@@ -8,7 +8,7 @@ import pyttsx3
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[len(voices)-1].id)
-engine.setProperty('rate', 400)
+engine.setProperty('rate', 300)
 # my limit 2023.11.19.19.18.27.053 400  hard 500
 
 
@@ -86,7 +86,9 @@ if __name__ == '__main__':
 python "D:\documents\ai\python\my-first-conda-project\_read to me args (with read time)2.py" "
 596 = 5min = 300sec
 '''
-
+'''
+python "D:\Documents\github\Free-time-coding\tools\_read to me args (with read time)_(csv)_3.py" "
+'''
 
 
 
