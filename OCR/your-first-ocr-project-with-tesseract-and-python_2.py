@@ -5,7 +5,7 @@ pytesseract.pytesseract.tesseract_cmd=r"C:\Program Files\Tesseract-OCR\tesseract
 # image stuff
 # img = cv2.imread("20231010_130254.jpg")
 # img = cv2.imread("D:\Documents\github\Free-time-coding\OCR\img.png")
-img = cv2.imread("img_1.png")
+img = cv2.imread("img_2.png")
 
 # img = cv2.resize(img, (400, 400))
 cv2.imshow("Image", img)

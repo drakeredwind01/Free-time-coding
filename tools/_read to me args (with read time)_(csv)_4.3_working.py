@@ -8,8 +8,8 @@ import pyttsx3
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[len(voices) - 1].id)
-engine.setProperty('rate', 200)
+engine.setProperty('voice', voices[1].id)
+engine.setProperty('rate', 600)
 
 def speak(audio):
     print('Computer: ' + audio)

@@ -8,8 +8,9 @@ import pyttsx3
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[len(voices) - 1].id)
-engine.setProperty('rate', 200)
+print(f"{len(voices)=}")
+engine.setProperty('voice', voices[0].id)
+engine.setProperty('rate', 600)
 
 def speak(audio):
     print('Computer: ' + audio)
@@ -20,6 +21,9 @@ def print_simple():
     win32clipboard.OpenClipboard()
     data = win32clipboard.GetClipboardData()
     win32clipboard.CloseClipboard()
+    # engine.setProperty('voice', voices[0].id)
+    # speak(data)
+    engine.setProperty('voice', voices[1].id)
     speak(data)
 
 def main_loop():

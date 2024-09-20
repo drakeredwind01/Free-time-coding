@@ -13,8 +13,7 @@ def speak(audio):
     engine.runAndWait()
 #speak('speach online')
 
-
-
+import keyboard  # Use keyboard library for key detection
 
 
 import webbrowser
@@ -33,14 +32,29 @@ def find_and_click(image_path, message):
   """
   This function searches for an image, clicks it if found, and prints a message.
   """
+  regions = [
+    (343, 382, 682, 57),  # Region 1
+    (343, 607, 665, 36),  # Region 2
+    (343, 814, 665, 60)  # Region 3
+  ]
+  # confidence=0.975 almost works
+  # confidence=0.973 almost works almost great
   while True:
     try:
-      print(f"searching '{image_path}'")
-      hit = pyautogui.locateCenterOnScreen(image_path, confidence=0.8)
-      if hit:
-        print(message)
-        pyautogui.click(hit)
-        break
+      for region in regions:
+        try:
+          # print(f"searching '{image_path}' in region {region}")
+          hit = pyautogui.locateCenterOnScreen(image_path, confidence=0.973, region=region)
+          if hit:
+            print(message)
+            pyautogui.click(hit)
+            return  # Exit after finding and clicking the image
+        except pyautogui.ImageNotFoundException:
+          pass  # Do nothing on purpose, loop will continue searching
+      if keyboard.is_pressed('shift+q'):
+        exit()
+      if keyboard.is_pressed('esc'):
+        exit()
       else:
         print(f"Image '{message}' not found, retrying...")
     except pyautogui.ImageNotFoundException:
@@ -64,6 +78,10 @@ def find_2_and_click(image_path_1, message_1, image_path_2, message_2):
         print(message_2)
         pyautogui.click(hit_2)
       # pass  # Do nothing on purpose, loop will continue searching
+      if keyboard.is_pressed('shift+q'):
+        exit()
+      if keyboard.is_pressed('esc'):
+        exit()
     except pyautogui.ImageNotFoundException:
       print(f"Image not found, retrying...")
       # Optionally, add a delay between retries
@@ -76,15 +94,19 @@ def main():
   This loop will repeat the entire process indefinitely.
   """
   while True:
-    find_and_click('D:\\Documents\\github\\Free-time-coding\\pyautogui\\IMAGE_PATH\\download_this_video.png', 'hit download_this_video')
-    # find_2_and_click('D:/Documents/github/Free-time-coding/pyautogui/IMAGE_PATH/start_download.png', 'hit start_download', 'D:/Documents/github/Free-time-coding/pyautogui/IMAGE_PATH/start_download_2.png', 'hit start_download_2')
-    find_and_click('D:/Documents/github/Free-time-coding/pyautogui/IMAGE_PATH/start_download_2.png', 'hit start_download_2')
-    find_and_click('D:\\Documents\\github\\Free-time-coding\\pyautogui\\IMAGE_PATH\\down_continue_background.png', 'hit down_continue_background')
-    pyautogui.hotkey('ctrl', 'tab')  # Press ctrl+tab
+    find_and_click('../IMAGE_PATH/farmer_against_potatos_green.png', 'hit farmer_against_potatos_green')
 
 if __name__ == "__main__":
   main()
 
+'''
+    mousepose = pyautogui.position()
+    find_and_click('../IMAGE_PATH/wco_tv_play_button.png', 'hit wco_tv_play_button.png')
+    pyautogui.moveRel(xOffset=-50,yOffset=0)
+    pyautogui.click()
+    pyautogui.hotkey('ctrl', 'tab')  # Press ctrl+tab
+    time.sleep(1)
+    pyautogui.scroll(-700) # Press page down
 
 
-
+'''

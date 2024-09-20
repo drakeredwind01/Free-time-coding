@@ -76,11 +76,18 @@ def main():
   This loop will repeat the entire process indefinitely.
   """
   while True:
+    mousepose = pyautogui.position()
+    find_and_click('IMAGE_PATH/wco_tv_play_button.png', 'hit wco_tv_play_button.png')
+    pyautogui.moveRel(xOffset=-50,yOffset=0)
+    pyautogui.click()
     find_and_click('D:\\Documents\\github\\Free-time-coding\\pyautogui\\IMAGE_PATH\\download_this_video.png', 'hit download_this_video')
     # find_2_and_click('D:/Documents/github/Free-time-coding/pyautogui/IMAGE_PATH/start_download.png', 'hit start_download', 'D:/Documents/github/Free-time-coding/pyautogui/IMAGE_PATH/start_download_2.png', 'hit start_download_2')
     find_and_click('D:/Documents/github/Free-time-coding/pyautogui/IMAGE_PATH/start_download_2.png', 'hit start_download_2')
     find_and_click('D:\\Documents\\github\\Free-time-coding\\pyautogui\\IMAGE_PATH\\down_continue_background.png', 'hit down_continue_background')
     pyautogui.hotkey('ctrl', 'tab')  # Press ctrl+tab
+    pyautogui.moveTo(mousepose)
+    time.sleep(1)
+    pyautogui.scroll(-700) # Press page down
 
 if __name__ == "__main__":
   main()
