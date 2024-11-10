@@ -9,7 +9,7 @@ class MyApp(App):
         label2 = Label(text='button 2')
         layout.add_widget(label1)
         layout.add_widget(label2)
-        return
+        return layout  # Return the layout
 
 if __name__=='__main__':
     MyApp().run()
