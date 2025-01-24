@@ -1,2 +1,2 @@
 # Free-time-coding
- personal projects
+ join us projects
