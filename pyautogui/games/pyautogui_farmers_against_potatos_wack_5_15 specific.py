@@ -1,3 +1,6 @@
+'''
+the other one was nice but it could be faster
+'''
 import keyboard
 from PIL import ImageGrab
 import cv2
@@ -5,12 +8,28 @@ import numpy as np
 import pyautogui
 import time
 
-# Define the regions where to search
+# Define the regions where to search (uncomment the desired regions)
 regions = [
-    (343, 382, 682, 57),  # Region 1
-    (343, 607, 665, 36),  # Region 2
-    (343, 814, 665, 60)   # Region 3
+    #(343, 382, 682, 57),  # Region 1 (Commented out)
+    #(343, 607, 665, 36),  # Region 2 (Commented out)
+    #(343, 814) 665, 60)   # Region 3 (Commented out)
+    (432, 379),
+    (556, 373),
+    (688, 379),
+    (813, 380),
+    (937, 374),
+    (430, 582),
+    (560, 588),
+    (685, 587),
+    (816, 586),
+    (942, 586),
+    (429, 794),
+    (561, 788),
+    (686, 791),
+    (813, 792),
+    (937, 791)
 ]
+
 
 # Define the color range for green (in HSV)
 # lower_green = np.array([40, 40, 40])  # Adjust as needed based on the green in the image
@@ -57,23 +76,4 @@ def detect_and_click_color():
                 continue  # Start the next iteration immediately after detecting green
 
             # If no green is found, attempt to detect yellow
-            yellow_points = search_color(screen, lower_yellow, upper_yellow)
-            print('looking for yellow')
-
-            if len(yellow_points[0]) > 0:
-                # If yellow is detected, click the first detected point
-                y = yellow_points[0][0]
-                x = yellow_points[1][0]
-                pyautogui.click(region[0] + x, region[1] + y)
-                print(f"Clicked yellow at: {(region[0] + x, region[1] + y)}")
-                time.sleep(0.1)  # Pause briefly after clicking
-
-        # Exit condition
-        if keyboard.is_pressed('esc'):
-            wait()
-            break
-
-        time.sleep(0.1)  # Add a small delay to reduce CPU usage
-
-if __name__ == "__main__":
-    detect_and_click_color()
+            yellow_points = search_color(screen, lower_yellow, upper

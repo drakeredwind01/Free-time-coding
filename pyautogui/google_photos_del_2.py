@@ -3,7 +3,10 @@ this program deletes a file from photos when the '4' key is pressed
 right fingers on left and right
 left middle finger on delete and pointer on '4'
 '''
-
+'''
+if the mouse is left in one spot for to long the delete button will dissapear.
+make the mouse move to bring back the screan
+'''
 import time
 import keyboard  # Use keyboard library for key detection
 import pyautogui
@@ -48,7 +51,7 @@ def main_loop():
     while True:
         # Check if 'q' is pressed
         if keyboard.is_pressed('4'):
-            pyautogui.moveRel(-1,0)
+            pyautogui.moveRel(-10,0)
             count += 1
             time.sleep(0.5)
             find_click_count("IMAGE_PATH/google/google_photos_delete.png","deleting", count)
