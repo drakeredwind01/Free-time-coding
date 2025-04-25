@@ -1,7 +1,7 @@
 # LEGB_4.py
 import LEGB_3
 
-# DOG_NAME = "ACE"      # how it was thought to work
+# DOG_NAME = "ACE"
 LEGB_3.DOG_NAME = "ACE" #rename before LEGB_3 prints
 
 LEGB_3.print_dog_data()
