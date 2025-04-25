@@ -1,0 +1,16 @@
+breeds:
+  Labrador Retriever:
+    size: Medium-Large
+    temperament: Friendly, Energetic, Loyal
+  Golden Retriever:
+    size: Large
+    temperament: Intelligent, Kind, Confident
+  Pug:
+    size: Small
+    temperament: Charming, Playful, Stubborn
+  German Shepherd:
+    size: Large
+    temperament: Intelligent, Loyal, Protective
+  Belgian Malinois:
+    size: Large
+    temperament: Intelligent, Loyal, Protective, High Energy, suiside bomber
