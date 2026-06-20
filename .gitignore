@@ -1,3 +1,11 @@
+
+# Environment variables
+.env
+*.env
+.env_test
+
+
+
 # Python
 __pycache__/
 *.py[cod]
