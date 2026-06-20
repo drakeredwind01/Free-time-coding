@@ -83,10 +83,5 @@ submit_button = driver.find_element(By.CSS_SELECTOR, ".submit-row input[type='su
 
 
 
-────────────────────────────────────────────────────────────────────────────────
-❯ for "random_python/seleinum_tut_redwind_pythonanywhere_1.py"
-  for "<input type="text" name="username" autofocus="" autocapitalize="none"
-  autocomplete="username" maxlength="150" required="" id="id_username">"
-  help us select this box and imput the lower username. ~line 41
-
+  
 '''
