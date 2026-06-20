@@ -6,8 +6,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.firefox.service import Service
-
+from dotenv import load_dotenv
+import os
 import time
+
+# pip install python-dotenv
+load_dotenv(".env_test")
+ADMIN_URL = os.getenv("DJANGO_ADMIN_URL")
+USERNAME   = os.getenv("DJANGO_USERNAME")
+PASSWORD   = os.getenv("DJANGO_PASSWORD")
 
 
 options = Options()
@@ -18,9 +25,9 @@ service = Service(executable_path="/snap/bin/geckodriver")
 driver = webdriver.Firefox(service=service, options=options)
 
 # driver.get("https://www.ebay.com/sch/i.html?_nkw=graphics+card&_sacat=0&_from=R40&_trksid=p4439441.m570.l1311")
-driver.get("https://drakeredwind01.pythonanywhere.com")
+# driver.get("https://drakeredwind01.pythonanywhere.com")
 # driver.get("https://www.selenium.dev/selenium/web/web-form.html")
-driver.get("{link_to_website}")
+driver.get(ADMIN_URL)
 
 
 title = driver.title
@@ -29,26 +36,25 @@ print(title)
 
 
 
-time.sleep(3)
+# time.sleep(3)
 
-
-text_box = driver.find_element(by=By.NAME, value="my-text")
-text_box.send_keys("Selenium")
-
-
-# message = driver.find_element(by=By.ID, value="message")
-# text = message.text
-# print(text)
-
-
-# is_email_visible = driver.find_element(By.NAME, "email_input").is_displayed()
-
-# CLASS_NAME doesn't support multiple classes — use CSS_SELECTOR with dot notation instead
-is_enabled_button = driver.find_element(By.CSS_SELECTOR, ".btn.btn-outline-primary.mt-3").is_enabled()
+# Target the submit input inside Django admin's .submit-row div
+submit_button = driver.find_element(By.CSS_SELECTOR, ".submit-row input[type='submit']")
+#                                         <div class="submit-row">  <input type="submit" value="Log in">
+is_enabled_button = submit_button.is_enabled()
 print(f"Is the submit button enabled? {is_enabled_button}")
 
 
-input("Press Enter to close...")
+
+#username
+text_box = driver.find_element(by=By.ID, value="id_username")
+text_box.send_keys(USERNAME)
+
+
+#password
+text_box = driver.find_element(by=By.NAME, value="password")
+text_box.send_keys(PASSWORD)
+
 
 
 
@@ -73,12 +79,9 @@ submit_button = driver.find_element(by=By.CSS_SELECTOR, value="button")
 
 text_box.send_keys("Selenium")
 
+
 submit_button = driver.find_element(By.CSS_SELECTOR, ".submit-row input[type='submit']")
 #                                         <div class="submit-row">  <input type="submit" value="Log in">
-
-
-
-
 
 
 '''
