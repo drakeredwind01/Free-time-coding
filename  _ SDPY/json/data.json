@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "age": 30,
+      "city": "Austin"
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "age": 25,
+      "city": "Denver"
+    }
+  ],
+  "settings": {
+    "debug": true,
+    "version": "1.0.0"
+  }
+}

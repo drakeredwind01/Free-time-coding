@@ -1,0 +1,1 @@
+/home/linuxbrew/.linuxbrew/Cellar/postgresql@17/17.10/bin/postgres "-D" "/home/drake/Documents/github/Free-time-coding/ _ SDPY/postgres/pgdata" "-k" "/tmp/pg_sdpy" "-p" "5455" "-h" ""

@@ -1,0 +1,12 @@
+settings:
+  debug: true
+  version: 1.0.0
+users:
+- age: 30
+  city: Austin
+  id: 1
+  name: Alice
+- age: 25
+  city: Denver
+  id: 2
+  name: Bob
